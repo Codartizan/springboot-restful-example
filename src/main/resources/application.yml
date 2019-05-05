@@ -1,6 +1,9 @@
 server:
     port: 8801
 
+logging:
+    path: src/main/log
+
 spring:
     datasource:
         #driver-class-name: com.mysql.jdbc.Driver

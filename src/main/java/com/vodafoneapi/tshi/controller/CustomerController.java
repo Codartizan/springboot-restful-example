@@ -49,7 +49,7 @@ public class CustomerController {
 
     @PutMapping("/customers/{id}")
     @ResponseStatus(HttpStatus.CREATED)
-    public void updateCustomer(@PathVariable Integer id, Customer customer) throws NotFoundException {
+    public void updateCustomer(@PathVariable Integer id, @RequestBody Customer customer) throws NotFoundException {
         customerService.updateCustomer(id, customer);
     }
 
